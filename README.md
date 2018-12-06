@@ -4,7 +4,6 @@ Ext JS Sample Application - Employee Directory (Coworkee)
 ## Getting started
 ### Prerequisite
 - Install [Node.js](https://nodejs.org/) (^6.9.2)
-- Install [Sencha Cmd](https://www.sencha.com/products/sencha-cmd) (^6.5.1)
 - Download [Sencha Ext JS](https://www.sencha.com/products/extjs) (^6.5.1).  We recommend
  extracting Ext JS into a `"sencha-sdks"` folder in your home directory.
 
@@ -20,20 +19,19 @@ Install the server node.js dependencies:
 Install the Ext JS framework for the application:
 
     $ cd client
-    $ sencha app install ~/sencha-sdks
-    or
-    $ sencha app upgrade ~/sencha-sdks/ext-<version of the sdk>
+    $ npm install
 
-Note: If you use `sencha app install ~/sencha-sdks` here, the version of the SDK inside ~/sencha-sdks will
-have to mach the version specified in `workspace.json`.
+IMPORTANT NOTE: If you face an issue during the build with being unable to resolve the dependency for "google", there might be an issue with the @sencha/ext-google npm package. One workaround that fixes this is copying this from "node_modules/@sencha" folder to packages/local inside the client folder. This allows the build to resolve the "google" requirement.
 
 Development build:
 
-    $ sencha app build --development
+    $ npm start
+    or
+    $ npm run build
 
 Production build:
 
-    $ sencha app build --production
+    $ npm run production
 
 ### Run the app
 

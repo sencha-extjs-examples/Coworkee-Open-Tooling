@@ -1,0 +1,8 @@
+/.vscode
+/client/app.watch.lock
+/client/bootstrap*
+/client/index.js*
+/server/*.db
+/server/node_modules
+/client/packages/local/ext-google
+*.log

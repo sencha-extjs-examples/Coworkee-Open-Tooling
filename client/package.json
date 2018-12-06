@@ -1,0 +1,57 @@
+{
+  "name": "coworkee",
+  "product": "ext",
+  "version": "0.0.1",
+  "description": "Coworkee Demo Application",
+  "scripts": {
+    "clean": "rimraf build",
+    "start": "cross-env-shell npm run build",
+    "build": "cross-env webpack --env.verbose=no --env.environment=development --env.browser=false --env.watch=no",
+    "build-v": "cross-env webpack --env.verbose=yes --env.environment=development --env.browser=false --env.watch=no",
+    "production": "cross-env webpack --env.verbose=no --env.environment=production --env.browser=false --env.watch=no",
+    "production-v": "cross-env webpack --env.verbose=yes --env.environment=production --env.browser=false --env.watch=no"
+  },
+  "extbuild": {
+    "defaultenvironment": "development",
+    "defaultverbose": "no"
+  },
+  "dependencies": {
+    "@sencha/ext-modern": "^6.6.0",
+    "@sencha/ext-google": "^6.5.0",
+    "@sencha/ext-modern-theme-material": "^6.6.0",
+    "@sencha/ext-modern-theme-triton": "^6.6.0",
+    "@sencha/ext": "^6.6.0",
+    "escape-string-regexp": "^1.0.5",
+    "express": "^4.14.0",
+    "minimist": "^1.2.0",
+    "sw-precache": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "@sencha/ext-webpack-plugin": "~1.0.1",
+    "command-line-args": "^5.0.2",
+    "cross-env": "^5.2.0",
+    "portfinder": "^1.0.18",
+    "react": "^16.5.2",
+    "react-hot-loader": "^4.3.11",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Ext JS",
+    "Sencha",
+    "HTML5"
+  ],
+  "author": "Sencha, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "http://www.sencha.com"
+}
