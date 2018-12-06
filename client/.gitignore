@@ -1,0 +1,8 @@
+/build
+/ext
+/node_modules
+/packages/local/ext-google
+bootstrap.*
+classic.json*
+modern.json*
+.sencha
