@@ -16,10 +16,10 @@
     "defaultverbose": "no"
   },
   "dependencies": {
-    "@sencha/ext-modern": "^6.6.0",
-    "@sencha/ext-google": "^6.5.0",
-    "@sencha/ext-modern-theme-material": "^6.6.0",
-    "@sencha/ext-modern-theme-triton": "^6.6.0",
+    "@sencha/ext-modern": "^6.7.0",
+    "@sencha/ext-google": "^6.7.0",
+    "@sencha/ext-modern-theme-material": "^6.7.0",
+    "@sencha/ext-modern-theme-triton": "^6.7.0",
     "@sencha/ext": "^6.7.0",
     "escape-string-regexp": "^1.0.5",
     "express": "^4.14.0",
