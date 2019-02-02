@@ -3,11 +3,9 @@ Ext JS Sample Application - Employee Directory (Coworkee)
 
 ## Getting started
 ### Prerequisite
-- Install [Node.js](https://nodejs.org/) (^6.9.2)
-- Download [Sencha Ext JS](https://www.sencha.com/products/extjs) (^6.5.1).  We recommend
- extracting Ext JS into a `"sencha-sdks"` folder in your home directory.
+- Login to Sencha [NPM Repository](http://docs.sencha.com/extjs/6.7.0/guides/getting_started/open_tooling.html#getting_started-_-open_tooling_-_step_2__login_to_the_npm_repository)
 
-On Windows the "~" part of the path will be replaced by something like "C:\Users\Me\".
+`npm login --registry=https://npm.sencha.com --scope=@sencha`
 
 ### Install the server
 Install the server node.js dependencies:
