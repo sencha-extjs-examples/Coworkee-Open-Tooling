@@ -5,11 +5,8 @@
   "description": "Coworkee Demo Application",
   "scripts": {
     "clean": "rimraf build",
-    "start": "cross-env-shell npm run build",
-    "build": "cross-env webpack --env.verbose=no --env.environment=development --env.browser=false --env.watch=no",
-    "build-v": "cross-env webpack --env.verbose=yes --env.environment=development --env.browser=false --env.watch=no",
-    "production": "cross-env webpack --env.verbose=no --env.environment=production --env.browser=false --env.watch=no",
-    "production-v": "cross-env webpack --env.verbose=yes --env.environment=production --env.browser=false --env.watch=no"
+    "start": "cross-env-shell webpack-dev-server --env.environment=development",
+    "production": "npm run clean && cross-env-shell webpack --env.environment=production --env.treeshake=true"
   },
   "extbuild": {
     "defaultenvironment": "development",
