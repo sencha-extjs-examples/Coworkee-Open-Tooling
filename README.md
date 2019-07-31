@@ -3,7 +3,7 @@ Ext JS Sample Application - Employee Directory (Coworkee)
 
 ## Getting started
 ### Prerequisite
-- Login to Sencha [NPM Repository](http://docs.sencha.com/extjs/6.7.0/guides/getting_started/open_tooling.html#getting_started-_-open_tooling_-_step_2__login_to_the_npm_repository)
+- Login to Sencha [NPM Repository](http://docs.sencha.com/extjs/7.0.0/guides/getting_started/open_tooling.html#getting_started-_-open_tooling_-_step_2__login_to_the_npm_repository)
 
 `npm login --registry=https://npm.sencha.com --scope=@sencha`
 
