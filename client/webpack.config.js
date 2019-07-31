@@ -13,8 +13,8 @@ module.exports = async function (env) {
     watchprofile = 'no'
   }
   else {
-    if (env.browser == undefined) {env.browser = true}
-    browserprofile = JSON.parse(env.browser) || true
+    if (env.browser == undefined) {env.browser = 'yes'}
+    browserprofile = env.browser || 'yes'
     watchprofile = env.watch || 'yes'
   }
   const isProd = buildenvironment === 'production'
@@ -22,8 +22,8 @@ module.exports = async function (env) {
   var buildenvironment = env.environment || process.env.npm_package_extbuild_defaultenvironment
   var buildverbose = env.verbose || process.env.npm_package_extbuild_defaultverbose
   if (buildprofile == 'all') { buildprofile = '' }
-  if (env.treeshake == undefined) {env.treeshake = false}
-  var treeshake = env.treeshake ? JSON.parse(env.treeshake) : false
+  if (env.treeshake == undefined) {env.treeshake = 'no'}
+  var treeshake = env.treeshake ? env.treeshake : 'no'
   var basehref = env.basehref || '/'
   var mode = isProd ? 'production': 'development'
 
@@ -40,8 +40,8 @@ module.exports = async function (env) {
       new ExtWebpackPlugin({
         framework: 'extjs',
         port: port,
-        emit: true,
-        browser: false,
+        emit: 'yes',
+        browser: 'no',
         treeshake: treeshake,
         watch: watchprofile,
         profile: buildprofile, 
