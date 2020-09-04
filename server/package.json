@@ -20,7 +20,7 @@
     "latinize": "~0.4.0",
     "morgan": "~1.9.1",
     "node-cron": "~2.0.3",
-    "sequelize": "~4.41.2",
+    "sequelize": "~6.3.5",
     "serve-favicon": "~2.5.0",
     "sqlite3": "~4.0.4",
     "yargs": "~12.0.5"
